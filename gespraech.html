@@ -108,23 +108,23 @@
         </div>
         <div class="faq" style="border-color: rgba(244,244,245,0.16);">
           <details>
-            <summary data-umami-event="faq-toggle" data-umami-event-question="kontrolle">Verliere ich die Kontrolle über meine Firma? <span class="sign">+</span></summary>
+            <summary data-question="kontrolle">Verliere ich die Kontrolle über meine Firma? <span class="sign">+</span></summary>
             <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Nein. Ihr Betrieb wird weiter von Ihnen geführt. Wenn Sie möchten, bleiben Sie auch langfristig an Bord, das Tempo des Übergangs stimmen wir gemeinsam ab.</div>
           </details>
           <details>
-            <summary data-umami-event="faq-toggle" data-umami-event-question="marke">Was passiert mit meinem Namen und meiner Marke? <span class="sign">+</span></summary>
+            <summary data-question="marke">Was passiert mit meinem Namen und meiner Marke? <span class="sign">+</span></summary>
             <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Der Name bleibt Ihrer. Eine sichtbare Zugehörigkeit zum Verbund gibt es nur, wenn Sie sie wollen.</div>
           </details>
           <details>
-            <summary data-umami-event="faq-toggle" data-umami-event-question="mitarbeiter">Und meine Mitarbeiter? <span class="sign">+</span></summary>
+            <summary data-question="mitarbeiter">Und meine Mitarbeiter? <span class="sign">+</span></summary>
             <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Hohe Arbeitsplatzsicherheit und Weiterbildung im Verbund. Ihr Team gewinnt Stabilität und Perspektive.</div>
           </details>
           <details>
-            <summary data-umami-event="faq-toggle" data-umami-event-question="kaufpreis">Wie schnell weiß ich, was meine Firma wert ist? <span class="sign">+</span></summary>
+            <summary data-question="kaufpreis">Wie schnell weiß ich, was meine Firma wert ist? <span class="sign">+</span></summary>
             <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Nach einem ersten Gespräch und einer Vertraulichkeitsvereinbarung erhalten Sie innerhalb von 48 Stunden eine erste Kaufpreisindikation.</div>
           </details>
           <details>
-            <summary data-umami-event="faq-toggle" data-umami-event-question="vertraulichkeit">Ist das alles vertraulich? <span class="sign">+</span></summary>
+            <summary data-question="vertraulichkeit">Ist das alles vertraulich? <span class="sign">+</span></summary>
             <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Ja. Jedes Gespräch ist diskret und unverbindlich. Wir arbeiten mit Vertraulichkeitsvereinbarungen/NDAs.</div>
           </details>
         </div>
@@ -222,6 +222,19 @@
           nav.classList.remove('is-open');
           btn.setAttribute('aria-expanded', 'false');
           btn.setAttribute('aria-label', 'Menü öffnen');
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      document.querySelectorAll('.faq details').forEach(function (el) {
+        el.addEventListener('toggle', function () {
+          if (el.open && window.umami) {
+            var key = el.querySelector('summary[data-question]').getAttribute('data-question');
+            umami.track('faq-open-' + key);
+          }
         });
       });
     })();
