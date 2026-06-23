@@ -3,31 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UPLIFT^ Aufzüge</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛗</text></svg>" />
+  <title>^UPLift Aufzüge</title>
+  <link rel="icon" href="assets/uplift_caret.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Tweaks vor dem ersten Paint anwenden (kein Flackern) -->
-  <script>
-    (function () {
-      try {
-        var t = JSON.parse(localStorage.getItem("uplift-tweaks") || "{}");
-        var r = document.documentElement;
-        if (t.accent && t.accent !== "none") r.setAttribute("data-accent", t.accent);
-        if (t.char && t.char !== "grotesk")  r.setAttribute("data-char", t.char);
-        if (t.theme && t.theme !== "light")  r.setAttribute("data-theme", t.theme);
-        if (t.density) r.setAttribute("data-density", t.density);
-        if (t.wire)    r.setAttribute("data-wire", t.wire);
-        if (t.radius != null) r.style.setProperty("--radius", t.radius + "px");
-      } catch (e) {}
-    })();
-  </script>
 </head>
 <body>
 
   <!-- ============ NAVIGATION ============ -->
   <header class="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="wm" aria-label="UPLIFT, zur Startseite">UPLIFT<span class="caret">^</span></a>
+      <a href="index.html" class="wm wm--logo" aria-label="UPLIFT, zur Startseite"><svg class="logo" aria-hidden="true" viewBox="0 0 1903 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><g transform="matrix(2.44366,0,0,2.44366,-399.487076,-1274.479056)"><g transform="matrix(0.9,0,0,1,25.276942,0)"><text x="252.769px" y="673.725px" style="font-family:&#39;Nunito-Black&#39;, &#39;Nunito&#39;;font-weight:900;font-size:213.137px;fill:none;">U<tspan x="406.867px " y="673.725px ">P</tspan></text></g><g transform="matrix(213.136574,0,0,213.136574,941.221873,673.724665)"></g><text x="521.13px" y="673.725px" style="font-family:&#39;Nunito-Medium&#39;, &#39;Nunito&#39;;font-weight:500;font-size:213.137px;fill:#1b1b1d;">LIF<tspan x="811.848px " y="673.725px ">T</tspan></text></g><g><path d="M394.445,377.604c-24.062,0 -45.312,-3.385 -63.75,-10.156c-18.438,-6.771 -33.984,-16.927 -46.641,-30.469c-12.656,-13.542 -22.188,-30.469 -28.594,-50.781c-6.406,-20.312 -9.609,-43.837 -9.609,-70.573l0,-167.188c0,-15.972 3.75,-28.038 11.25,-36.198c7.5,-8.16 18.125,-12.24 31.875,-12.24c14.062,0 24.766,4.08 32.109,12.24c7.344,8.16 11.016,20.226 11.016,36.198l0,168.229c0,26.736 5.313,46.875 15.938,60.417c10.625,13.542 26.094,20.312 46.406,20.312c20,0 35.313,-6.771 45.937,-20.312c10.625,-13.542 15.938,-33.681 15.938,-60.417l0,-168.229c0,-15.972 3.672,-28.038 11.016,-36.198c7.344,-8.16 17.891,-12.24 31.641,-12.24c13.75,0 24.219,4.08 31.406,12.24c7.188,8.16 10.781,20.226 10.781,36.198l0,167.188c0,35.764 -5.547,65.712 -16.641,89.844c-11.094,24.132 -27.578,42.188 -49.453,54.167c-21.875,11.979 -48.75,17.969 -80.625,17.969Zm235.781,-1.042c-13.75,0 -24.375,-4.253 -31.875,-12.76c-7.5,-8.507 -11.25,-20.399 -11.25,-35.677l0,-275c0,-15.625 3.828,-27.604 11.484,-35.938c7.656,-8.333 18.359,-12.5 32.109,-12.5l115.312,0c37.5,0 66.484,10.677 86.953,32.031c20.469,21.354 30.703,50.781 30.703,88.281c0,37.5 -10.234,66.927 -30.703,88.281c-20.469,21.354 -49.453,32.031 -86.953,32.031l-72.656,0l0,82.812c0,15.278 -3.594,27.17 -10.781,35.677c-7.187,8.507 -17.969,12.76 -32.344,12.76Zm43.125,-204.688l57.656,0c16.25,0 28.75,-3.906 37.5,-11.719c8.75,-7.812 13.125,-19.531 13.125,-35.156c0,-15.972 -4.375,-27.778 -13.125,-35.417c-8.75,-7.639 -21.25,-11.458 -37.5,-11.458l-57.656,0l0,93.75Zm-572.653,-43.371c-2.267,0.053 -2.198,0.421 -2.829,2.538c-0.016,0.055 -18.653,47.927 -24.994,60.489c-17.442,34.555 -93.134,24.766 -67.702,-38.862c48.012,-120.124 49.693,-122.788 55.829,-132.518c10.716,-16.991 54.582,-38.331 81.534,7.1c0.775,1.306 52.818,128.363 53.937,131.321c17.487,46.225 -36.156,65.077 -60.492,44.46c-5.033,-4.264 -11.046,-9.358 -35.283,-74.527Z" style="fill:url(#_Linear1);fill-rule:nonzero;"></path></g></g><defs><linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(863.664222,0,0,377.604167,0,188.802083)"><stop offset="0" style="stop-color:#0064e1;stop-opacity:1"></stop><stop offset="1" style="stop-color:#0081fb;stop-opacity:1"></stop></linearGradient></defs></svg></a>
       <nav class="nav__links">
         <a href="#vision">Vision</a>
         <a href="#leistungen">Leistungen</a>
@@ -37,40 +25,52 @@
       <div class="nav__cta">
         <a href="gespraech.html" class="btn">Gespräch anfragen</a>
       </div>
+      <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main data-screen-label="Startseite">
 
     <!-- ============ HERO ============ -->
-    <section class="hero" data-screen-label="Hero">
-      <div class="hero__media">
-        <div class="hero__bg" style="position:absolute; inset:0;"></div>
-        <div class="hero__scrim"></div>
-        <div class="hero__overlay">
-          <div class="container">
-            <div class="hero__text">
-              <h1 class="h1">Regionaler Aufzugsservice<br />aus einer Hand.</h1>
-              <p class="lead">Wartung, Prüfung und Modernisierung von Betrieben, die ihre Region kennen, gebündelt in einem starken Verbund.</p>
-              <div class="hero__actions">
-                <a href="#vision" class="btn">Mehr über uns <span class="caret">^</span></a>
-                <a href="gespraech.html" class="btn btn--ghost">Für Unternehmer</a>
-              </div>
-            </div>
+    <section class="hero" data-screen-label="Hero" style="--hero-veil: 0.225;">
+      <video class="hero__video" autoplay muted loop playsinline aria-hidden="true" tabindex="-1"></video>
+      <script>
+        (function () {
+          var v = document.currentScript.previousElementSibling;
+          var url = 'assets/hero.mp4';
+          fetch(url, { headers: { Range: 'bytes=0-1' } }).then(function (r) {
+            if (r.status === 206 || r.headers.get('accept-ranges')) {
+              v.src = url; v.play().catch(function () {});
+            } else {
+              return fetch(url).then(function (x) { return x.blob(); }).then(function (b) {
+                v.src = URL.createObjectURL(b); v.play().catch(function () {});
+              });
+            }
+          }).catch(function () { v.src = url; });
+        })();
+      </script>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 class="h1">Regionaler Aufzugsservice<br />aus einer Hand.</h1>
+          <p class="lead">Wartung, Prüfung und Instandhaltung für Ihre Anlage, zuverlässig vor Ort und gestützt durch ein starkes Netzwerk.</p>
+          <div class="hero__actions">
+            <a href="#vision" class="btn">Mehr über uns</a>
+            <a href="gespraech.html" class="btn btn--ghost">Für Unternehmer</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============ VERTRAUENSLEISTE ============ -->
-    <section class="trust" aria-label="Leistungsversprechen im Überblick" style="height: 102px">
-      <div class="container" style="height: 102px">
+    <section class="trust" aria-label="Leistungsversprechen im Überblick">
+      <div class="container">
         <div class="trust__grid">
-          <div class="trust__item" style="height: 102px"><span class="caret-mark">^</span><span>Wartung, Inspektion und
-Modernisierung aus einer Hand</span></div>
-          <div class="trust__item"><span class="caret-mark">^</span><span>24/7 Bereitschafts- und Notfalldienst im UPLIFT^-Verbund</span></div>
-          <div class="trust__item"><span class="caret-mark">^</span><span>Prüfung und Sicherheit nach
-BetrSichV und ZÜS</span></div>
+          <div class="trust__item"><img class="trust__bullet" src="assets/uplift_caret.svg" alt="" /><span>Persönliche Ansprechpartner vor Ort, in Ihrer Region</span></div>
+          <div class="trust__item"><img class="trust__bullet" src="assets/uplift_caret.svg" alt="" /><span>Die Stärke eines überregionalen Verbunds im Rücken</span></div>
+          <div class="trust__item"><img class="trust__bullet" src="assets/uplift_caret.svg" alt="" /><span>Unabhängig und herstellerneutral, in ganz Deutschland</span></div>
         </div>
       </div>
     </section>
@@ -84,13 +84,13 @@ BetrSichV und ZÜS</span></div>
         </div>
         <div class="prose">
           <p>Der Aufzugsmarkt verändert sich spürbar. Gute Techniker und Auszubildende sind schwer zu finden, die Anforderungen an Dokumentation, Digitalisierung und den Einsatz neuer Technik steigen und der Wettbewerbsdruck wächst. Viele inhabergeführte Aufzugsfirmen schultern das heute allein.</p>
-          <p>Wir gehen einen anderen Weg. UPLIFT<span class="caret-mark">^</span> verbindet die Stärken eigenständiger Aufzugsfirmen zu einem Verbund: lokale Nähe und persönliche Ansprechpartner vor Ort, gestützt durch gebündeltes Know-how, ein überregionales Netzwerk und gemeinsame Investitionen in Technik und Ausbildung.</p>
+          <p>Wir gehen einen anderen Weg. <span class="brand"><span class="brand-c">^</span><span class="brand-up">UP</span>Lift</span> verbindet die Stärken eigenständiger Aufzugsfirmen zu einem Verbund: lokale Nähe und persönliche Ansprechpartner vor Ort, gestützt durch gebündeltes Know-how, ein überregionales Netzwerk und gemeinsame Investitionen in Technik und Ausbildung.</p>
           <p>Für Sie als Kunde heißt das: die Verlässlichkeit eines gewachsenen Familienbetriebs, kombiniert mit der Substanz und Reaktionsfähigkeit eines starken Verbunds. Genau diese Kombination macht uns zum richtigen Partner für die Aufzüge in Ihrem Gebäude. Heute und in den kommenden Jahren.</p>
         </div>
       </div>
     </section>
 
-    <hr class="divider" />
+    <hr class="divider">
 
     <!-- ============ LEISTUNGEN ============ -->
     <section class="section" id="leistungen" data-screen-label="Leistungen">
@@ -98,7 +98,7 @@ BetrSichV und ZÜS</span></div>
         <div class="head" style="margin-bottom:48px;">
           <p class="eyebrow"><span class="caret-mark">^</span> Leistungen</p>
           <h2 class="h2">Unser Leistungsversprechen</h2>
-          <p class="lead" style="margin-top:16px;">UPLIFT<span class="caret-mark">^</span> baut den Verbund derzeit auf. Wofür wir stehen, ist klar: ein vollständiger Service rund um den Aufzug, erbracht von den Betrieben in unserem Verbund.</p>
+          <p class="lead" style="margin-top:16px;">Rund um den Aufzug bieten die Betriebe im <span class="brand"><span class="brand-c">^</span><span class="brand-up">UP</span>Lift</span>-Verbund das komplette Leistungsspektrum, von der Wartung bis zur Modernisierung.</p>
         </div>
         <div class="grid-3">
           <article class="card">
@@ -141,38 +141,38 @@ BetrSichV und ZÜS</span></div>
         <div class="head" style="margin-bottom:44px;">
           <p class="eyebrow"><span class="caret-mark">^</span> Verbund</p>
           <h2 class="h2">Was der Verbund für Sie bedeutet</h2>
-          <p class="lead" style="margin-top:16px;">Jede Firma im UPLIFT<span class="caret-mark">^</span>-Verbund bleibt eigenständig: eigener Name, feste Ansprechpartner, gewachsene Nähe zu den Kunden. Was dazukommt, nimmt Last von den Schultern und macht den Service stärker.</p>
+          <p class="lead" style="margin-top:16px;">Jede Firma im <span class="brand"><span class="brand-c">^</span><span class="brand-up">UP</span>Lift</span>-Verbund bleibt eigenständig: eigener Name, feste Ansprechpartner, gewachsene Nähe zu den Kunden. Was der Verbund beisteuert, stärkt genau das, worauf es ankommt: Verfügbarkeit, Tempo und Qualität vor Ort.</p>
         </div>
       </div>
       <div class="container">
         <div class="numbered" style="--line: rgba(244,244,245,0.16); border-color: rgba(244,244,245,0.16);">
           <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
-            <span class="numbered__num">01</span>
+            <span class="numbered__num">1</span>
             <h3 class="h3">Entlastung im Tagesgeschäft</h3>
             <p style="color: rgba(244,244,245,0.72);">Buchhaltung, Marketing und Verwaltung kosten Zeit, die für den Aufzug fehlt. Im Verbund übernehmen wir diese Aufgaben zentral, damit sich jeder Betrieb wieder auf Technik und Kunden konzentrieren kann.</p>
           </div>
           <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
-            <span class="numbered__num">02</span>
+            <span class="numbered__num">2</span>
             <h3 class="h3">Bessere Konditionen im Einkauf</h3>
             <p style="color: rgba(244,244,245,0.72);">Gebündelte Bestellungen bei Lieferanten bedeuten bessere Preise für Ersatzteile und Komponenten. Diese Stärke gibt der Verbund an seine Betriebe und Kunden weiter.</p>
           </div>
           <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
-            <span class="numbered__num">03</span>
+            <span class="numbered__num">3</span>
             <h3 class="h3">Erreichbarkeit über die Region hinaus</h3>
             <p style="color: rgba(244,244,245,0.72);">Ein verbundweites Technikernetzwerk sichert Bereitschaft, Urlaubsvertretung und Kapazität für größere Projekte. Kein Ausfall, weil gerade jemand fehlt.</p>
           </div>
           <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
-            <span class="numbered__num">04</span>
+            <span class="numbered__num">4</span>
             <h3 class="h3">Gebündeltes Know-how bei Regulatorik und Digitalisierung</h3>
             <p style="color: rgba(244,244,245,0.72);">Anforderungen an Dokumentation, Prüfung und Technik wachsen ständig. Statt dass jeder Betrieb das allein stemmt, bündelt der Verbund das Wissen und hält es für alle aktuell.</p>
           </div>
           <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
-            <span class="numbered__num">05</span>
+            <span class="numbered__num">5</span>
             <h3 class="h3">Sicherer Nachwuchs durch gemeinsame Ausbildung</h3>
             <p style="color: rgba(244,244,245,0.72);">Gute Techniker sind rar. Mit gemeinsamer Aus- und Weiterbildung sichert der Verbund qualifizierten Nachwuchs, damit die von Ihnen betreuten Aufzüge auch in zehn Jahren kompetent betreut werden.</p>
           </div>
           <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
-            <span class="numbered__num">06</span>
+            <span class="numbered__num">6</span>
             <h3 class="h3">Stabilität und Zukunftssicherheit</h3>
             <p style="color: rgba(244,244,245,0.72);">Ein wirtschaftlich stabiler Verbund federt ab, was einen Einzelbetrieb treffen kann. Das bedeutet hohe Arbeitsplatzsicherheit für die Teams und einen verlässlichen Partner für Sie.</p>
           </div>
@@ -189,12 +189,12 @@ BetrSichV und ZÜS</span></div>
             <h2 class="h2" style="font-size: clamp(1.5rem, 2.6vw, 2.1rem);">Sie führen selbst eine Aufzugsfirma?</h2>
             <p class="lead" style="margin-top:14px; max-width: 640px;">Wenn Sie über die Zukunft Ihres Unternehmens nachdenken, etwa mit Blick auf Nachfolge oder Wachstum, lassen Sie uns vertraulich und unverbindlich ins Gespräch kommen.</p>
           </div>
-          <a href="gespraech.html" class="btn">Vertraulich sprechen <span class="caret">^</span></a>
+          <a href="gespraech.html" class="btn">Gespräch anfragen</a>
         </div>
       </div>
     </section>
 
-    <hr class="divider" />
+    <hr class="divider">
 
     <!-- ============ UNSERE HALTUNG ============ -->
     <section class="section" data-screen-label="Haltung">
@@ -213,27 +213,25 @@ BetrSichV und ZÜS</span></div>
             <p class="muted">Wir respektieren, was über Jahre gewachsen ist, und reden mit Ihnen, nicht über Sie.</p>
           </div>
           <div class="stance__item">
-            <h3 class="h3">^
-Langfristige Perspektiven</h3>
-            <p class="muted">Wir bauen einen Verbund, der besteht, ohne schnelle Weiterveräußerung.</p>
+            <h3 class="h3"><span class="caret-mark">^</span> Langfristige Perspektiven</h3>
+            <p class="muted">Wir denken in Jahrzehnten, nicht in Verkaufszyklen. Was wir aufbauen, soll bestehen bleiben.</p>
           </div>
         </div>
         <div style="margin-top:36px;">
-          <a href="gespraech.html" class="link-arrow">Mehr erfahren <span class="caret">^</span></a>
+          <a href="gespraech.html" class="link-arrow">Mehr erfahren</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="footer" data-screen-label="Footer">
     <div class="container">
       <div class="footer__grid">
         <div>
-          <a href="index.html" class="wm" style="font-size:1.2rem;">UPLIFT<span class="caret">^</span></a>
+          <a href="index.html" class="wm wm--logo wm--logo-footer" aria-label="UPLIFT, zur Startseite"><svg class="logo logo--footer" aria-hidden="true" viewBox="0 0 1903 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><g transform="matrix(2.44366,0,0,2.44366,-399.487076,-1274.479056)"><g transform="matrix(0.9,0,0,1,25.276942,0)"><text x="252.769px" y="673.725px" style="font-family:&#39;Nunito-Black&#39;, &#39;Nunito&#39;;font-weight:900;font-size:213.137px;fill:none;">U<tspan x="406.867px " y="673.725px ">P</tspan></text></g><g transform="matrix(213.136574,0,0,213.136574,941.221873,673.724665)"></g><text x="521.13px" y="673.725px" style="font-family:&#39;Nunito-Medium&#39;, &#39;Nunito&#39;;font-weight:500;font-size:213.137px;fill:#1b1b1d;">LIF<tspan x="811.848px " y="673.725px ">T</tspan></text></g><g><path d="M394.445,377.604c-24.062,0 -45.312,-3.385 -63.75,-10.156c-18.438,-6.771 -33.984,-16.927 -46.641,-30.469c-12.656,-13.542 -22.188,-30.469 -28.594,-50.781c-6.406,-20.312 -9.609,-43.837 -9.609,-70.573l0,-167.188c0,-15.972 3.75,-28.038 11.25,-36.198c7.5,-8.16 18.125,-12.24 31.875,-12.24c14.062,0 24.766,4.08 32.109,12.24c7.344,8.16 11.016,20.226 11.016,36.198l0,168.229c0,26.736 5.313,46.875 15.938,60.417c10.625,13.542 26.094,20.312 46.406,20.312c20,0 35.313,-6.771 45.937,-20.312c10.625,-13.542 15.938,-33.681 15.938,-60.417l0,-168.229c0,-15.972 3.672,-28.038 11.016,-36.198c7.344,-8.16 17.891,-12.24 31.641,-12.24c13.75,0 24.219,4.08 31.406,12.24c7.188,8.16 10.781,20.226 10.781,36.198l0,167.188c0,35.764 -5.547,65.712 -16.641,89.844c-11.094,24.132 -27.578,42.188 -49.453,54.167c-21.875,11.979 -48.75,17.969 -80.625,17.969Zm235.781,-1.042c-13.75,0 -24.375,-4.253 -31.875,-12.76c-7.5,-8.507 -11.25,-20.399 -11.25,-35.677l0,-275c0,-15.625 3.828,-27.604 11.484,-35.938c7.656,-8.333 18.359,-12.5 32.109,-12.5l115.312,0c37.5,0 66.484,10.677 86.953,32.031c20.469,21.354 30.703,50.781 30.703,88.281c0,37.5 -10.234,66.927 -30.703,88.281c-20.469,21.354 -49.453,32.031 -86.953,32.031l-72.656,0l0,82.812c0,15.278 -3.594,27.17 -10.781,35.677c-7.187,8.507 -17.969,12.76 -32.344,12.76Zm43.125,-204.688l57.656,0c16.25,0 28.75,-3.906 37.5,-11.719c8.75,-7.812 13.125,-19.531 13.125,-35.156c0,-15.972 -4.375,-27.778 -13.125,-35.417c-8.75,-7.639 -21.25,-11.458 -37.5,-11.458l-57.656,0l0,93.75Zm-572.653,-43.371c-2.267,0.053 -2.198,0.421 -2.829,2.538c-0.016,0.055 -18.653,47.927 -24.994,60.489c-17.442,34.555 -93.134,24.766 -67.702,-38.862c48.012,-120.124 49.693,-122.788 55.829,-132.518c10.716,-16.991 54.582,-38.331 81.534,7.1c0.775,1.306 52.818,128.363 53.937,131.321c17.487,46.225 -36.156,65.077 -60.492,44.46c-5.033,-4.264 -11.046,-9.358 -35.283,-74.527Z" style="fill:url(#_Linear2);fill-rule:nonzero;"></path></g></g><defs><linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(863.664222,0,0,377.604167,0,188.802083)"><stop offset="0" style="stop-color:#0064e1;stop-opacity:1"></stop><stop offset="1" style="stop-color:#0081fb;stop-opacity:1"></stop></linearGradient></defs></svg></a>
           <address style="margin-top:18px;">
-            UPLIFT<span class="caret-mark">^</span> GmbH i. G.<br />
+            <span class="brand"><span class="brand-up">UP</span>Lift</span> GmbH i.G.<br />
             Glockenblumenstr. 16, 80935 München
           </address>
         </div>
@@ -247,16 +245,16 @@ Langfristige Perspektiven</h3>
         <div>
           <h4>Navigation</h4>
           <nav class="footer__links">
-            <a href="#vision">Vision</a>
-            <a href="#leistungen">Leistungen</a>
-            <a href="#verbund">Verbund</a>
+            <a href="index.html#vision">Vision</a>
+            <a href="index.html#leistungen">Leistungen</a>
+            <a href="index.html#verbund">Verbund</a>
             <a href="gespraech.html">Kontakt</a>
             <a href="impressum.html">Impressum</a>
           </nav>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>© 2026 UPLIFT<span class="caret-mark">^</span>. Alle Rechte vorbehalten.</span>
+        <span>© 2026 <span class="brand"><span class="brand-c">^</span><span class="brand-up">UP</span>Lift</span>. Alle Rechte vorbehalten.</span>
         <nav>
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutz</a>
@@ -265,6 +263,24 @@ Langfristige Perspektiven</h3>
     </div>
   </footer>
 
-  <script src="tweaks.js"></script>
+  <script>
+    (function () {
+      var nav = document.querySelector('.nav');
+      var btn = nav && nav.querySelector('.nav__toggle');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+      });
+      nav.querySelectorAll('.nav__links a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          nav.classList.remove('is-open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Menü öffnen');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
