@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPLIFT^ Aufzüge · Gespräch</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛗</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = JSON.parse(localStorage.getItem("uplift-tweaks") || "{}");
+        var r = document.documentElement;
+        if (t.accent && t.accent !== "none") r.setAttribute("data-accent", t.accent);
+        if (t.char && t.char !== "grotesk")  r.setAttribute("data-char", t.char);
+        if (t.theme && t.theme !== "light")  r.setAttribute("data-theme", t.theme);
+        if (t.density) r.setAttribute("data-density", t.density);
+        if (t.wire)    r.setAttribute("data-wire", t.wire);
+        if (t.radius != null) r.style.setProperty("--radius", t.radius + "px");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="wm" aria-label="UPLIFT, zur Startseite">UPLIFT<span class="caret">^</span></a>
+      <nav class="nav__links">
+        <a href="index.html#vision">Vision</a>
+        <a href="index.html#leistungen">Leistungen</a>
+        <a href="index.html#verbund">Verbund</a>
+        <a href="gespraech.html">Kontakt</a>
+      </nav>
+      <div class="nav__cta">
+        <a href="#kontakt" class="btn">Gespräch anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <main data-screen-label="Lassen Sie uns sprechen">
+
+    <!-- ============ HEADER ============ -->
+    <section class="section" data-screen-label="Header">
+      <div class="container" style="max-width: 880px;">
+        <p class="eyebrow"><span class="caret-mark">^</span> Vertraulich · Unverbindlich</p>
+        <h1 class="h1">So läuft ein Gespräch mit UPLIFT<span class="caret-mark">^</span> ab</h1>
+        <p class="lead" style="margin-top:22px; max-width: 640px;">Diskret, in Ihrem Tempo und ohne jede Verpflichtung. Sie entscheiden nach jedem Schritt selbst, ob Sie weitergehen möchten.</p>
+        <div class="hero__actions">
+          <a href="#kontakt" class="btn">Erstgespräch anfragen <span class="caret">^</span></a>
+          <a href="index.html" class="btn btn--ghost">Zurück zur Startseite</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============ PROZESS ============ -->
+    <section class="section" data-screen-label="Prozess">
+      <div class="container">
+        <div class="head" style="margin-bottom:40px;">
+          <p class="eyebrow"><span class="caret-mark">^</span> Schritt für Schritt</p>
+          <h2 class="h2">Vom ersten Gespräch zur Entscheidung</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <div class="step__body">
+              <div class="step__title"><h3 class="h3">Vertrauliches Kennenlernen</h3></div>
+              <p class="muted">Ein kurzes, unverbindliches Erstgespräch, persönlich und diskret.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <div class="step__body">
+              <div class="step__title"><h3 class="h3">Erste Zahlen und Vertraulichkeit</h3></div>
+              <p class="muted">Auf Basis weniger Eckdaten und einer Vertraulichkeitsvereinbarung.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <div class="step__body">
+              <div class="step__title">
+                <h3 class="h3">Kaufpreisindikation</h3>
+                <span class="badge">innerhalb von 48 Stunden</span>
+              </div>
+              <p class="muted">Sie erhalten zeitnah eine erste, belastbare Einschätzung. Schnell und verlässlich.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <div class="step__body">
+              <div class="step__title"><h3 class="h3">Gemeinsamer Fahrplan</h3></div>
+              <p class="muted">Wir stimmen Übergang, Ihre Rolle und das Tempo individuell mit Ihnen ab.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">5</span>
+            <div class="step__body">
+              <div class="step__title"><h3 class="h3">Ihre Firma bleibt, was sie ist</h3></div>
+              <p class="muted">Name, Team und Kundennähe bleiben. Sie entscheiden, wie aktiv Sie bleiben.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section band" data-screen-label="FAQ">
+      <div class="container" style="max-width: 920px;">
+        <div class="head" style="margin-bottom:36px;">
+          <p class="eyebrow"><span class="caret-mark">^</span> Häufige Fragen</p>
+          <h2 class="h2">Was Eigentümer uns fragen</h2>
+        </div>
+        <div class="faq" style="border-color: rgba(244,244,245,0.16);">
+          <details>
+            <summary>Verliere ich die Kontrolle über meine Firma? <span class="sign">+</span></summary>
+            <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Nein. Sie bleiben zunächst Geschäftsführer mit voller operativer Verantwortung. Das Tempo bestimmen Sie mit.</div>
+          </details>
+          <details>
+            <summary>Was passiert mit meinem Namen und meiner Marke? <span class="sign">+</span></summary>
+            <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Ihr Firmenname bleibt. Erst später, und nur wenn sinnvoll, kommt ein dezenter Zusatz wie „ein UPLIFT^-Unternehmen“ hinzu.</div>
+          </details>
+          <details>
+            <summary>Und meine Mitarbeiter? <span class="sign">+</span></summary>
+            <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Hohe Arbeitsplatzsicherheit und Weiterbildung im Verbund. Ihr Team gewinnt Stabilität und Perspektive.</div>
+          </details>
+          <details>
+            <summary>Wie schnell weiß ich, was meine Firma wert ist? <span class="sign">+</span></summary>
+            <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Nach einem ersten Gespräch und einer Vertraulichkeitsvereinbarung erhalten Sie innerhalb von 48 Stunden eine erste Kaufpreisindikation.</div>
+          </details>
+          <details>
+            <summary>Ist das alles vertraulich? <span class="sign">+</span></summary>
+            <div class="faq__answer" style="color: rgba(244,244,245,0.72);">Ja. Jedes Gespräch ist diskret und unverbindlich. Wir arbeiten mit Vertraulichkeitsvereinbarungen/NDAs.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="section" id="kontakt" data-screen-label="Kontakt">
+      <div class="container">
+        <div class="head" style="margin-bottom:44px;">
+          <p class="eyebrow"><span class="caret-mark">^</span> Kontakt</p>
+          <h2 class="h2">Lassen Sie uns vertraulich sprechen</h2>
+          <p class="lead" style="margin-top:16px; max-width: 620px;">Ein kurzes, unverbindliches Erstgespräch, telefonisch oder per E-Mail. Diskretion ist selbstverständlich.</p>
+        </div>
+        <div class="split">
+          <div class="contact-direct">
+            <p class="eyebrow" style="margin-bottom:4px;"><span class="caret-mark">^</span> Direkt erreichen</p>
+            <dl style="margin:0; display:flex; flex-direction:column; gap:16px;">
+              <div>
+                <dt>Telefon</dt>
+                <dd><a href="tel:+491749667018">0174 966 7018</a></dd>
+              </div>
+              <div>
+                <dt>E-Mail</dt>
+                <dd><a href="mailto:kontakt@uplift-aufzuege.de">kontakt@uplift-aufzuege.de</a></dd>
+              </div>
+              <div>
+                <dt>Firma</dt>
+                <dd>UPLIFT<span class="caret-mark">^</span> GmbH i. G. · München</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <p class="eyebrow" style="margin-bottom:4px;"><span class="caret-mark">^</span> Per E-Mail</p>
+            <p class="muted" style="margin:0 0 22px; max-width: 420px;">Schreiben Sie uns direkt. Mit einem Klick öffnet sich eine vorbereitete E-Mail in Ihrem Mailprogramm, den Text passen Sie einfach an.</p>
+            <a href="mailto:kontakt@uplift-aufzuege.de?subject=Anfrage%20Erstgespr%C3%A4ch%20UPLIFT&body=Guten%20Tag%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20ein%20unverbindliches%20Erstgespr%C3%A4ch.%0A%0AName%3A%0AFirma%3A%0ARegion%2FOrt%3A%0ATelefon%3A%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen" class="btn">E-Mail schreiben <span class="caret">^</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-screen-label="Footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="wm" style="font-size:1.2rem;">UPLIFT<span class="caret">^</span></a>
+          <address style="margin-top:18px;">
+            UPLIFT<span class="caret-mark">^</span> GmbH i. G.<br />
+            Glockenblumenstr. 16, 80935 München
+          </address>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <div class="footer__links">
+            <a href="tel:+491749667018">0174 966 7018</a>
+            <a href="mailto:kontakt@uplift-aufzuege.de">kontakt@uplift-aufzuege.de</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <nav class="footer__links">
+            <a href="index.html#vision">Vision</a>
+            <a href="index.html#leistungen">Leistungen</a>
+            <a href="index.html#verbund">Verbund</a>
+            <a href="gespraech.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 UPLIFT<span class="caret-mark">^</span>. Alle Rechte vorbehalten.</span>
+        <nav>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="tweaks.js"></script>
+</body>
+</html>

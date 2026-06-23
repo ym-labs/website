@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPLIFT^ Aufzüge</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛗</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Tweaks vor dem ersten Paint anwenden (kein Flackern) -->
+  <script>
+    (function () {
+      try {
+        var t = JSON.parse(localStorage.getItem("uplift-tweaks") || "{}");
+        var r = document.documentElement;
+        if (t.accent && t.accent !== "none") r.setAttribute("data-accent", t.accent);
+        if (t.char && t.char !== "grotesk")  r.setAttribute("data-char", t.char);
+        if (t.theme && t.theme !== "light")  r.setAttribute("data-theme", t.theme);
+        if (t.density) r.setAttribute("data-density", t.density);
+        if (t.wire)    r.setAttribute("data-wire", t.wire);
+        if (t.radius != null) r.style.setProperty("--radius", t.radius + "px");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="wm" aria-label="UPLIFT, zur Startseite">UPLIFT<span class="caret">^</span></a>
+      <nav class="nav__links">
+        <a href="#vision">Vision</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#verbund">Verbund</a>
+        <a href="gespraech.html">Kontakt</a>
+      </nav>
+      <div class="nav__cta">
+        <a href="gespraech.html" class="btn">Gespräch anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <main data-screen-label="Startseite">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-screen-label="Hero">
+      <div class="hero__media">
+        <div class="hero__bg" style="position:absolute; inset:0;"></div>
+        <div class="hero__scrim"></div>
+        <div class="hero__overlay">
+          <div class="container">
+            <div class="hero__text">
+              <h1 class="h1">Regionaler Aufzugsservice<br />aus einer Hand.</h1>
+              <p class="lead">Wartung, Prüfung und Modernisierung von Betrieben, die ihre Region kennen, gebündelt in einem starken Verbund.</p>
+              <div class="hero__actions">
+                <a href="#vision" class="btn">Mehr über uns <span class="caret">^</span></a>
+                <a href="gespraech.html" class="btn btn--ghost">Für Unternehmer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VERTRAUENSLEISTE ============ -->
+    <section class="trust" aria-label="Leistungsversprechen im Überblick" style="height: 102px">
+      <div class="container" style="height: 102px">
+        <div class="trust__grid">
+          <div class="trust__item" style="height: 102px"><span class="caret-mark">^</span><span>Wartung, Inspektion und
+Modernisierung aus einer Hand</span></div>
+          <div class="trust__item"><span class="caret-mark">^</span><span>24/7 Bereitschafts- und Notfalldienst im UPLIFT^-Verbund</span></div>
+          <div class="trust__item"><span class="caret-mark">^</span><span>Prüfung und Sicherheit nach
+BetrSichV und ZÜS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISION ============ -->
+    <section class="section" id="vision" data-screen-label="Vision">
+      <div class="container split">
+        <div class="head">
+          <p class="eyebrow"><span class="caret-mark">^</span> Vision</p>
+          <h2 class="h2">Warum ein Verbund der richtige Partner für Ihr Gebäude ist</h2>
+        </div>
+        <div class="prose">
+          <p>Der Aufzugsmarkt verändert sich spürbar. Gute Techniker und Auszubildende sind schwer zu finden, die Anforderungen an Dokumentation, Digitalisierung und den Einsatz neuer Technik steigen und der Wettbewerbsdruck wächst. Viele inhabergeführte Aufzugsfirmen schultern das heute allein.</p>
+          <p>Wir gehen einen anderen Weg. UPLIFT<span class="caret-mark">^</span> verbindet die Stärken eigenständiger Aufzugsfirmen zu einem Verbund: lokale Nähe und persönliche Ansprechpartner vor Ort, gestützt durch gebündeltes Know-how, ein überregionales Netzwerk und gemeinsame Investitionen in Technik und Ausbildung.</p>
+          <p>Für Sie als Kunde heißt das: die Verlässlichkeit eines gewachsenen Familienbetriebs, kombiniert mit der Substanz und Reaktionsfähigkeit eines starken Verbunds. Genau diese Kombination macht uns zum richtigen Partner für die Aufzüge in Ihrem Gebäude. Heute und in den kommenden Jahren.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============ LEISTUNGEN ============ -->
+    <section class="section" id="leistungen" data-screen-label="Leistungen">
+      <div class="container">
+        <div class="head" style="margin-bottom:48px;">
+          <p class="eyebrow"><span class="caret-mark">^</span> Leistungen</p>
+          <h2 class="h2">Unser Leistungsversprechen</h2>
+          <p class="lead" style="margin-top:16px;">UPLIFT<span class="caret-mark">^</span> baut den Verbund derzeit auf. Wofür wir stehen, ist klar: ein vollständiger Service rund um den Aufzug, erbracht von den Betrieben in unserem Verbund.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle></svg></div>
+            <h3 class="h3">Wartung und Instandhaltung</h3>
+            <p>Planmäßige Wartung in festen Intervallen hält Ihre Anlage zuverlässig verfügbar und verlängert ihre Lebensdauer.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5" transform="rotate(45 12 12)"></rect></svg></div>
+            <h3 class="h3">Reparatur und Entstörung</h3>
+            <p>Defekte beheben wir schnell und fachgerecht, mit qualifizierten Technikern und kurzen Wegen vor Ort.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="2.6" fill="currentColor" stroke="none"></circle></svg></div>
+            <h3 class="h3">24/7 Notdienst</h3>
+            <p>Bei Störungen erreichen Sie uns rund um die Uhr. Über das Netzwerk des Verbunds sind wir schnell zur Stelle.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 12 6 19 13"></polyline><polyline points="5 19 12 12 19 19" opacity="0.4"></polyline></svg></div>
+            <h3 class="h3">Modernisierung und Neuanlagen</h3>
+            <p>Wir modernisieren bestehende Anlagen und planen neue Aufzüge. Für mehr Sicherheit, Effizienz und Wert Ihrer Immobilie.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6"></polyline></svg></div>
+            <h3 class="h3">Prüfung und Compliance</h3>
+            <p>Wir begleiten die Prüfungen nach BetrSichV und koordinieren die ZÜS-Termine, damit Fristen und Dokumentation stimmen.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="12" rx="1.5"></rect><line x1="9.5" y1="20" x2="14.5" y2="20"></line></svg></div>
+            <h3 class="h3">Fernüberwachung und Diagnostik</h3>
+            <p>Moderne Fernüberwachung erkennt Auffälligkeiten frühzeitig, sodass sich Ausfälle vermeiden lassen, bevor sie entstehen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VERBUND ============ -->
+    <section class="section band" id="verbund" data-screen-label="Verbund">
+      <div class="container">
+        <div class="head" style="margin-bottom:44px;">
+          <p class="eyebrow"><span class="caret-mark">^</span> Verbund</p>
+          <h2 class="h2">Was der Verbund für Sie bedeutet</h2>
+          <p class="lead" style="margin-top:16px;">Jede Firma im UPLIFT<span class="caret-mark">^</span>-Verbund bleibt eigenständig: eigener Name, feste Ansprechpartner, gewachsene Nähe zu den Kunden. Was dazukommt, nimmt Last von den Schultern und macht den Service stärker.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="numbered" style="--line: rgba(244,244,245,0.16); border-color: rgba(244,244,245,0.16);">
+          <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
+            <span class="numbered__num">01</span>
+            <h3 class="h3">Entlastung im Tagesgeschäft</h3>
+            <p style="color: rgba(244,244,245,0.72);">Buchhaltung, Marketing und Verwaltung kosten Zeit, die für den Aufzug fehlt. Im Verbund übernehmen wir diese Aufgaben zentral, damit sich jeder Betrieb wieder auf Technik und Kunden konzentrieren kann.</p>
+          </div>
+          <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
+            <span class="numbered__num">02</span>
+            <h3 class="h3">Bessere Konditionen im Einkauf</h3>
+            <p style="color: rgba(244,244,245,0.72);">Gebündelte Bestellungen bei Lieferanten bedeuten bessere Preise für Ersatzteile und Komponenten. Diese Stärke gibt der Verbund an seine Betriebe und Kunden weiter.</p>
+          </div>
+          <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
+            <span class="numbered__num">03</span>
+            <h3 class="h3">Erreichbarkeit über die Region hinaus</h3>
+            <p style="color: rgba(244,244,245,0.72);">Ein verbundweites Technikernetzwerk sichert Bereitschaft, Urlaubsvertretung und Kapazität für größere Projekte. Kein Ausfall, weil gerade jemand fehlt.</p>
+          </div>
+          <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
+            <span class="numbered__num">04</span>
+            <h3 class="h3">Gebündeltes Know-how bei Regulatorik und Digitalisierung</h3>
+            <p style="color: rgba(244,244,245,0.72);">Anforderungen an Dokumentation, Prüfung und Technik wachsen ständig. Statt dass jeder Betrieb das allein stemmt, bündelt der Verbund das Wissen und hält es für alle aktuell.</p>
+          </div>
+          <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
+            <span class="numbered__num">05</span>
+            <h3 class="h3">Sicherer Nachwuchs durch gemeinsame Ausbildung</h3>
+            <p style="color: rgba(244,244,245,0.72);">Gute Techniker sind rar. Mit gemeinsamer Aus- und Weiterbildung sichert der Verbund qualifizierten Nachwuchs, damit die von Ihnen betreuten Aufzüge auch in zehn Jahren kompetent betreut werden.</p>
+          </div>
+          <div class="numbered__item" style="border-color: rgba(244,244,245,0.16);">
+            <span class="numbered__num">06</span>
+            <h3 class="h3">Stabilität und Zukunftssicherheit</h3>
+            <p style="color: rgba(244,244,245,0.72);">Ein wirtschaftlich stabiler Verbund federt ab, was einen Einzelbetrieb treffen kann. Das bedeutet hohe Arbeitsplatzsicherheit für die Teams und einen verlässlichen Partner für Sie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HINWEIS FÜR UNTERNEHMER ============ -->
+    <section class="section--tight section" data-screen-label="Hinweis Unternehmer">
+      <div class="container">
+        <div class="band__row" style="background: var(--surface); border:1px solid var(--line); border-radius: var(--radius); padding: 44px 40px;">
+          <div>
+            <p class="eyebrow"><span class="caret-mark">^</span> Hinweis für Unternehmer</p>
+            <h2 class="h2" style="font-size: clamp(1.5rem, 2.6vw, 2.1rem);">Sie führen selbst eine Aufzugsfirma?</h2>
+            <p class="lead" style="margin-top:14px; max-width: 640px;">Wenn Sie über die Zukunft Ihres Unternehmens nachdenken, etwa mit Blick auf Nachfolge oder Wachstum, lassen Sie uns vertraulich und unverbindlich ins Gespräch kommen.</p>
+          </div>
+          <a href="gespraech.html" class="btn">Vertraulich sprechen <span class="caret">^</span></a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============ UNSERE HALTUNG ============ -->
+    <section class="section" data-screen-label="Haltung">
+      <div class="container">
+        <div class="head" style="margin-bottom:48px;">
+          <p class="eyebrow"><span class="caret-mark">^</span> Unsere Haltung</p>
+          <h2 class="h2">Wie wir arbeiten</h2>
+        </div>
+        <div class="grid-3">
+          <div class="stance__item">
+            <h3 class="h3"><span class="caret-mark">^</span> Eigenständigkeit zuerst</h3>
+            <p class="muted">Ihre Firma bleibt, was sie ist. Veränderung passiert in Ihrem Tempo, nicht über Nacht.</p>
+          </div>
+          <div class="stance__item">
+            <h3 class="h3"><span class="caret-mark">^</span> Auf Augenhöhe</h3>
+            <p class="muted">Wir respektieren, was über Jahre gewachsen ist, und reden mit Ihnen, nicht über Sie.</p>
+          </div>
+          <div class="stance__item">
+            <h3 class="h3">^
+Langfristige Perspektiven</h3>
+            <p class="muted">Wir bauen einen Verbund, der besteht, ohne schnelle Weiterveräußerung.</p>
+          </div>
+        </div>
+        <div style="margin-top:36px;">
+          <a href="gespraech.html" class="link-arrow">Mehr erfahren <span class="caret">^</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-screen-label="Footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="wm" style="font-size:1.2rem;">UPLIFT<span class="caret">^</span></a>
+          <address style="margin-top:18px;">
+            UPLIFT<span class="caret-mark">^</span> GmbH i. G.<br />
+            Glockenblumenstr. 16, 80935 München
+          </address>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <div class="footer__links">
+            <a href="tel:+491749667018">0174 966 7018</a>
+            <a href="mailto:kontakt@uplift-aufzuege.de">kontakt@uplift-aufzuege.de</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <nav class="footer__links">
+            <a href="#vision">Vision</a>
+            <a href="#leistungen">Leistungen</a>
+            <a href="#verbund">Verbund</a>
+            <a href="gespraech.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 UPLIFT<span class="caret-mark">^</span>. Alle Rechte vorbehalten.</span>
+        <nav>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="tweaks.js"></script>
+</body>
+</html>
